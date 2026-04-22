@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kontakt | Wojciech Maczugowski</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <section class="contact-page">
+      <nav class="topbar">
+        <a class="brand" href="index.html">Portfolio</a>
+        <div class="topbar-links">
+          <a href="index.html#oferta">Oferta</a>
+          <a href="index.html#projekty">Projekty</a>
+          <a href="contact.html" aria-current="page">Kontakt</a>
+        </div>
+      </nav>
+
+      <div class="contact-layout">
+        <section class="contact-panel">
+          <p class="eyebrow">Kontakt</p>
+          <h1>Porozmawiajmy o Twoim projekcie.</h1>
+          <p>
+            Jeśli chcesz stworzyć materiał wideo, montaż albo fotografię,
+            napisz wiadomość i opisz, czego potrzebujesz.
+          </p>
+
+          <div class="contact-list">
+            <a class="contact-item" href="mailto:wojtek.maczugowski@gmail.com">
+              <span class="contact-icon">@</span>
+              <span>
+                <strong>E-mail</strong>
+                wojtek.maczugowski@gmail.com
+              </span>
+            </a>
+
+            <a class="contact-item" href="tel:+48507406505">
+              <span class="contact-icon">+48</span>
+              <span>
+                <strong>Telefon</strong>
+                507-406-505
+              </span>
+            </a>
+
+            <a class="contact-item" href="https://instagram.com/_maczugawski" target="_blank" rel="noreferrer">
+              <span class="contact-icon instagram-icon" aria-hidden="true"></span>
+              <span>
+                <strong>Instagram</strong>
+                @_maczugawski
+              </span>
+            </a>
+          </div>
+        </section>
+
+        <section class="contact-form">
+          <p class="section-label">Formularz</p>
+          <h2>Napisz wiadomość</h2>
+          <p>Uzupełnij dane i wyślij krótki opis projektu.</p>
+
+          <form class="form-grid" action="mailto:wojtek.maczugowski@gmail.com" method="post" enctype="text/plain">
+            <div class="form-field">
+              <label for="name">Imię</label>
+              <input id="name" name="Imię" type="text" placeholder="Twoje imię" />
+            </div>
+
+            <div class="form-field">
+              <label for="email">E-mail</label>
+              <input id="email" name="Email" type="email" placeholder="twojmail@adres.pl" />
+            </div>
+
+            <div class="form-field">
+              <label for="message">Wiadomość</label>
+              <textarea id="message" name="Wiadomość" placeholder="Napisz, czego potrzebujesz..."></textarea>
+            </div>
+
+            <button class="contact-submit" type="submit">Wyślij wiadomość</button>
+          </form>
+        </section>
+      </div>
+    </section>
+  </body>
+</html>
