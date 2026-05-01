@@ -43,11 +43,11 @@
               </span>
             </a>
 
-            <a class="contact-item" href="https://instagram.com/_maczugawski" target="_blank" rel="noreferrer">
+            <a class="contact-item" href="https://instagram.com/w_maczugowski" target="_blank" rel="noreferrer">
               <span class="contact-icon instagram-icon" aria-hidden="true"></span>
               <span>
                 <strong>Instagram</strong>
-                @_maczugawski
+                @w_maczugowski
               </span>
             </a>
           </div>
@@ -58,20 +58,33 @@
           <h2>Napisz wiadomość</h2>
           <p>Uzupełnij dane i wyślij krótki opis projektu.</p>
 
-          <form class="form-grid" action="mailto:wojtek.maczugowski@gmail.com" method="post" enctype="text/plain">
+          <form
+            class="form-grid"
+            action="https://formsubmit.co/wojtek.maczugowski@gmail.com"
+            method="POST"
+          >
+            <input type="hidden" name="_subject" value="Nowa wiadomość z portfolio" />
+            <input type="hidden" name="_template" value="table" />
+            <input type="text" name="_honey" tabindex="-1" autocomplete="off" style="display: none" />
+
             <div class="form-field">
               <label for="name">Imię</label>
-              <input id="name" name="Imię" type="text" placeholder="Twoje imię" />
+              <input id="name" name="name" type="text" placeholder="Twoje imię" required />
             </div>
 
             <div class="form-field">
               <label for="email">E-mail</label>
-              <input id="email" name="Email" type="email" placeholder="twojmail@adres.pl" />
+              <input id="email" name="email" type="email" placeholder="twojmail@adres.pl" required />
             </div>
 
             <div class="form-field">
               <label for="message">Wiadomość</label>
-              <textarea id="message" name="Wiadomość" placeholder="Napisz, czego potrzebujesz..."></textarea>
+              <textarea
+                id="message"
+                name="message"
+                placeholder="Napisz, czego potrzebujesz..."
+                required
+              ></textarea>
             </div>
 
             <button class="contact-submit" type="submit">Wyślij wiadomość</button>
