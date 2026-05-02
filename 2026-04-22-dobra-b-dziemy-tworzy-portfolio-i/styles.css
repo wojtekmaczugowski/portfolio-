@@ -127,7 +127,7 @@ main,
 .hero-frame h1 {
   margin: 0;
   font-family: Impact, Haettenschweiler, "Arial Black", sans-serif;
-  font-size: clamp(3rem, 8vw, 4.7rem);
+  font-size: clamp(2.45rem, 6.4vw, 4.1rem);
   line-height: 0.95;
   text-transform: uppercase;
 }
@@ -190,6 +190,11 @@ main {
 .panel p {
   color: var(--muted);
   line-height: 1.7;
+}
+
+.intro-strip .section-label,
+.intro-strip h2 {
+  padding-left: 1.5rem;
 }
 
 .service-grid {
@@ -404,7 +409,6 @@ main {
 
 .photo-section-heading {
   margin-bottom: 1.8rem;
-  text-align: center;
 }
 
 .photo-grid {
@@ -700,6 +704,115 @@ main {
   }
 }
 
+@media (min-width: 901px) {
+  .hero {
+    padding: 2rem 3.5rem 3rem;
+  }
+
+  .topbar {
+    width: min(100%, 74rem);
+    margin: 0 auto;
+  }
+
+  .hero-content {
+    width: min(100%, 74rem);
+    margin: 3rem auto 0;
+  }
+
+  .hero-frame {
+    min-height: 18rem;
+    padding: 2.4rem;
+  }
+
+  .hero-frame p {
+    max-width: 36rem;
+    font-size: 1.08rem;
+  }
+
+  .hero-tags {
+    gap: 1rem;
+  }
+
+  .hero-tags a {
+    min-width: 9rem;
+    text-align: center;
+  }
+
+  main {
+    width: min(100%, 76rem);
+    padding: 3rem 2rem 6rem;
+  }
+
+  .intro-strip,
+  .projects,
+  .project-heading,
+  .video-panel,
+  .photo-panel {
+    width: 100%;
+    max-width: none;
+  }
+
+  .intro-strip {
+    display: block;
+    width: 100%;
+    max-width: none;
+    margin: 1.4rem auto 0;
+    padding-left: 2.2rem;
+  }
+
+  .intro-strip h2 {
+    font-size: clamp(2rem, 3.1vw, 2.85rem);
+    white-space: nowrap;
+  }
+
+  .service-grid {
+    width: 100%;
+    gap: 1.5rem;
+    margin-top: 2rem;
+  }
+
+  .service-card {
+    min-height: 34rem;
+  }
+
+  .project-heading {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    gap: 2rem;
+    margin-top: 6rem;
+  }
+
+  .video-panel {
+    padding: 2.2rem;
+  }
+
+  .video-section-heading {
+    display: grid;
+    gap: 0.25rem;
+    max-width: none;
+  }
+
+  .video-section-heading p {
+    max-width: 34rem;
+    margin: 0;
+  }
+
+  .video-works-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.25rem;
+  }
+
+  .photo-panel {
+    padding: 2.2rem 2rem 2rem;
+  }
+
+  .photo-grid {
+    max-width: 40rem;
+    gap: 1rem;
+  }
+}
+
 @media (max-width: 900px) {
   .contact-layout,
   .project-panels {
@@ -749,7 +862,8 @@ main {
   }
 
   .hero-frame h1 {
-    font-size: clamp(2.5rem, 15vw, 4.2rem);
+    font-size: clamp(2rem, 12vw, 3.15rem);
+    line-height: 0.92;
   }
 
   .photo-tile:nth-child(2n),
